@@ -18,10 +18,8 @@ int check_cycle(listint_t *list)
 			break;
 		}
 
-		if(a1->next)
-		{
-			if (a2->next->next)
-				a2 = a2->next;
+		if (a2->next->next)
+			a2 = a2->next->next;
 		}
 		else
 		{
