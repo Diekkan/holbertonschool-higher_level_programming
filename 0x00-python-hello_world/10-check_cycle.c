@@ -15,14 +15,14 @@ int check_cycle(listint_t *list)
 			a1 = a1->next;
 		else
 		{
-			break;
+			return (0);
 		}
 
 		if (a2->next->next)
 			a2 = a2->next->next;
 		else
 		{
-			break;
+			return (0);
 		}
 		if (a1 == a2)
 		{
