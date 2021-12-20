@@ -9,10 +9,15 @@ int check_cycle(listint_t *list)
 	listint_t *a1 = list;
 	listint_t *a2 = list;
 
-	while (a2)
+	while (list)
 	{
 		if (a1->next)
 			a1 = a1->next;
+		else
+		{
+			break;
+		}
+
 		if (a2->next->next)
 			a2 = a2->next->next;
 		else
