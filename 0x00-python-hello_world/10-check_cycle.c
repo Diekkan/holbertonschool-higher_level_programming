@@ -18,9 +18,7 @@ int check_cycle(listint_t *list)
 		}
 		a2 = a2->next;
 		if (!a2)
-		{
-			break;
-		}
+			return (0);
 		if (a1 == a2)
 			return (1);
 	}
