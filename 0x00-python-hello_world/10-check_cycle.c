@@ -20,7 +20,6 @@ int check_cycle(listint_t *list)
 
 		if (a2->next->next)
 			a2 = a2->next->next;
-		}
 		else
 		{
 			break;
