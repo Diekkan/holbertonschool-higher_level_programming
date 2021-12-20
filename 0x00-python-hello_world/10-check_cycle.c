@@ -13,18 +13,12 @@ int check_cycle(listint_t *list)
 	{
 		if (a1->next)
 			a1 = a1->next;
-		else
-		{
-			break;
-		}
-
 		if (a2->next->next)
 			a2 = a2->next->next;
 		else
 		{
 			break;
 		}
-
 		if (a1 == a2)
 		{
 			return (1);
