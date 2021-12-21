@@ -1,6 +1,6 @@
 def islower(c):
     checkcase = ord(c)
-    if checkcase in range(97, 122):
-        return True
+    if checkcase > 96 and checkcase < 123:
+        return (True)
     else:
-        return False
+        return (False)
