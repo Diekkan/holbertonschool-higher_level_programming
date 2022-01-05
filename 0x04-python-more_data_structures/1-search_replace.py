@@ -1,6 +1,3 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    replacing = 0
-    for i in range(my_list.count(search)):
-        replacing = my_list.index(search, replacing)
-        my_list[replacing] = replace
+    return [replace if letter == search else letter for letter in my_list]
