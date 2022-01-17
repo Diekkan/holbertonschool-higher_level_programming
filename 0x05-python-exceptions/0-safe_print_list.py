@@ -5,7 +5,9 @@ def safe_print_list(my_list=[], x=0):
         try:
             if count < x:
                 print("{}".format(element, end=''))
-                count += 1
+            else:
+                break
+            count += 1
         except IndexError:
             break
     return (count)
