@@ -5,9 +5,11 @@
     width - width of the rectangle
     height - height of the rectangle
 """
+
+
 class Rectangle:
     """ Rectangle class
-        
+
         Attributes:
         width & height
         Methods:
@@ -30,10 +32,12 @@ class Rectangle:
     @property
     def height(self):
         return self.__height
+
     # Returns width.
     @property
     def width(self):
         return self.__width
+
     # Sets height.
     @height.setter
     def height(self, value):
@@ -42,6 +46,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
     # Sets width.
     @width.setter
     def width(self, value):

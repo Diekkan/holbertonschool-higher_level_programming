@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-# A rectangle class...
+""" Making my first rectangle class ever.
+:D
+"""
+
+
 class Rectangle:
-    # The rectangle class.
+    """ Rectangle class
+
+    A simple class with no methods nor attributes.
+    """
     pass
