@@ -6,7 +6,14 @@
     height - height of the rectangle
 """
 class Rectangle:
-    # The rectangle class.
+    """ Rectangle class
+        
+        Attributes:
+        width & height
+        Methods:
+        width & height retrievers
+        and setters.
+    """
     def __init__(self, width=0, height=0):
         if type(width) != int:
             raise TypeError("width must be an integer")
