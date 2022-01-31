@@ -3,6 +3,7 @@
 add attribute
 """
 
+
 def add_attribute(cls, name, value):
     """ can we add an attribute?"""
     if not hasattr(cls, "__dict__"):

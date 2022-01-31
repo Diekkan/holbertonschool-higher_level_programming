@@ -3,6 +3,7 @@
 geometry class and rectangle
 """
 
+
 class BaseGeometry:
     """Geometry dash."""
     def area(self):
