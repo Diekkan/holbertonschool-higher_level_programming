@@ -3,6 +3,7 @@
 inherits_from
 """
 
+
 def inherits_from(obj, a_class):
     """ Returns true if is instance
     of a class that inherited, false

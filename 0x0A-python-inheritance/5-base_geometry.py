@@ -7,4 +7,3 @@ empty class
 class BaseGeometry:
     """ Geometry dash."""
     pass
-
