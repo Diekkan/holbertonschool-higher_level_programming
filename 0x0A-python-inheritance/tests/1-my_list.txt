@@ -1,0 +1,33 @@
+>>>MyList = __import__('1-my_list').MyList
+
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.append(-2)
+>>> my_list.append(-4)
+>>> print(my_list)
+[-2, -4]
+
+>>> my_list1 = MyList()
+>>> my_list1 = [-2, -4]
+>>> print(my_list)
+[-2, -4]
+
+>>> my_list = MyList()
+>>> my_list = [-2, -4]
+>>> my_list.print_sorted()
+[-4, -2]
+
+>>> my_list1 = MyList()
+>>> my_list1 = [-2, -4]
+>>> my_list1.print_sorted()
+[-4, -2]
+
+>>> my_list = []
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'print_sorted'
+
+>>> my_list = []
+>>> print(my_list)
+[]

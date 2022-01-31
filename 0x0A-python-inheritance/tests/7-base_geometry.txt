@@ -1,0 +1,25 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/holbertonschool-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 7, in area
+    raise Exception("area() is not implemented")
+Exception: area() is not implemented
+
+>>> bg.integer_validator("str", "test")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/holbertonschool-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 11, in integer_validator
+    raise TypeError("{} must be an integer".format(name))
+TypeError: str must be an integer
+
+>>> bg.integer_validator("negative", -1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/holbertonschool-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 13, in integer_validator
+    raise ValueError("{} must be greater than 0".format(name))
+ValueError: negative must be greater than 0
+
+>>> bg.integer_validator("hello", 1)
