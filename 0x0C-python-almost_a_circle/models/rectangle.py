@@ -111,5 +111,10 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ returns a dictionary with all attributes """
-        return self.__dict__
+        dictionary = {'id':self.id,
+                'width':self.width,
+                'height':self.height,
+                'x':self.x,
+                'y':self.y}
+        return dictionary
 
