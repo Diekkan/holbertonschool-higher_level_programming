@@ -40,10 +40,11 @@ class Square(Rectangle):
                     setattr(self, dictatt[i], args[i])
         else:
             for key in kwargs:
-                setattr(self, key, kwargs[key])
+                    setattr(self, key, kwargs[key])
 
     def to_dictionary(self):
         """ returns a dictionary with all attributes """
         dictionary = {'id': self.id, 'size': self.width}
         dictionary.update({'x': self.x, 'y': self.y})
         return dictionary
+

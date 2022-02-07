@@ -100,21 +100,18 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """ updates attributes """
-        dictatt = {0:"id", 1:"width", 2:"height", 3:"x", 4:"y"}
+        dictatt = {0: "id", 1: "width", 2: "height", 3: "x", 4: "y"}
         if args:
             if len(args) < 6:
                 for i in range(len(args)):
                     setattr(self, dictatt[i], args[i])
         else:
             for key in kwargs:
-                    setattr(self, key, kwargs[key])
+                setattr(self, key, kwargs[key])
 
     def to_dictionary(self):
         """ returns a dictionary with all attributes """
-        dictionary = {'id':self.id,
-                'width':self.width,
-                'height':self.height,
-                'x':self.x,
-                'y':self.y}
+        dictionary = {'id': self.id, 'width': self.width}
+        dictionary2 = {'height': self.height, 'x': self.x, 'y': self.y}
+        dictionary.update(dictionary2)
         return dictionary
-
