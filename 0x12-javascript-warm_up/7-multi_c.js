@@ -2,7 +2,7 @@
 
 if (process.argv[2]) {
   if (parseInt(process.argv[2]) > 0) {
-    for (let i = 0; i < parseInt(process.argv[2]); i++) {
+    for (let i = 0; i < parseInt(rocess.argv[2]); i++) {
       console.log('C is fun');
     }
   }
