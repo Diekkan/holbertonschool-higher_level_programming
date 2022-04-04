@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
 const myList = [];
-if (process.argv[2]) {
-  if (process.argv[4]) {
+if (parseInt(process.argv[2])) {
+  if (parseInt(process.argv[4])) {
     for (let i = 2, j = 0; process.argv[i]; i++, j++) {
-      myList[j] = process.argv[i];
+      myList[j] = parseInt(process.argv[i]);
     }
     myList.sort((a, b) => b - a);
     console.log(myList[1]);
