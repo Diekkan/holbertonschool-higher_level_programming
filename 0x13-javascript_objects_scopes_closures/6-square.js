@@ -10,7 +10,7 @@ class Square extends Rectangle {
   }
 
   charPrint (c) {
-    if (c === 'C') {
+    if (c && isNaN(c)) {
       for (let i = 0; i < this.size; i++) {
         console.log(c.repeat(this.size));
       }
