@@ -17,7 +17,7 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
     s = select(State)
-    lol = session.query(State).filter(State.name.like(argvi[4])).first()
+    lol = session.query(State).filter(State.name.like(argv[4])).first()
     flag = 0
     for i in lol:
         print(str(i.id))
