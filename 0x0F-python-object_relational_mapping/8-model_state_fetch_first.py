@@ -18,5 +18,8 @@ if __name__ == "__main__":
     s = select(State)
     result = conn.execute(s)
     result = result.fetchone()
-    result = str(result[0]) + ': ' + str(result[1])
-    print(result)
+    if (not result):
+        print('Nothing')
+    else:
+        result = str(result[0]) + ': ' + str(result[1])
+        print(result)
