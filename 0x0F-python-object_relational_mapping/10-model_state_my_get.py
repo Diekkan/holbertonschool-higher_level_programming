@@ -14,8 +14,8 @@ if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(argv[1], argv[2],
                                    argv[3]), pool_pre_ping=True)
+    session = sessionmaker(bind=engine)
     session = Session()
-    s = select(State)
     lol = session.query(State).filter(State.name.like(argv[4])).first()
     if lol:
         print(lol.id)
