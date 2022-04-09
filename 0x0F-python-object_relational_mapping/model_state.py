@@ -9,6 +9,9 @@ from sqlalchemy import Column, Integer, String, ForeignKey
 Base = declarative_base()
 
 class State(Base):
+    """
+    Class State that inherits from Base.
+    """
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
