@@ -15,6 +15,6 @@ if __name__ == "__main__":
                                    argv[3]), pool_pre_ping=True)
     Session = sessionmaker(engine)
     with Session.begin() as session:
-        lol = session.query(State, City).filter(City.state_id==State.id).all()
-        for c, i in lol:
+        el = session.query(State, City).filter(City.state_id == State.id).all()
+        for c, i in el:
             print("{}: ({}) {}".format(c.name, i.id, i.name))

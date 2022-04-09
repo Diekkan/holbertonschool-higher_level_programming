@@ -14,6 +14,7 @@ if len(argv) > 3:
     cur.execute("SELECT * FROM states WHERE name LIKE 'N%'")
     rows = cur.fetchall()
     for i in rows:
-        print(i)
+        if i[1][0] == 'N':
+            print(i)
     cur.close()
     db.close()

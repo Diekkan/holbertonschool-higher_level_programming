@@ -13,6 +13,7 @@ if len(argv) > 3:
     cur.execute("SELECT * FROM states WHERE name LIKE '%{}%'".format(argv[4]))
     rows = cur.fetchall()
     for i in rows:
-        print(i)
+        if i[1] == argv[4]:
+            print(i)
     cur.close()
     db.close()
