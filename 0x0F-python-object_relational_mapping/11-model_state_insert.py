@@ -5,8 +5,7 @@
 """
 
 from model_state import Base, State
-from sqlalchemy.sql import select
-from sqlalchemy import (create_engine), update
+from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 from sys import argv
 
@@ -19,8 +18,7 @@ if __name__ == "__main__":
     ln.name = "Louisiana"
     with Session.begin() as session:
         session.add(ln)
+        result = session.query(State).filter(State.name.like('%Louisiana%'))
+        for i in result:
+            print(i.id)
         session.commit()
-
-    result = session.query(State).filter(State.name.like('%Louisiana%'))
-    for i in result:
-        print(i.id)
