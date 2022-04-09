@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+First state
 """
 
 from model_state import Base, State
