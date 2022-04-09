@@ -18,9 +18,8 @@ if __name__ == "__main__":
     session = Session()
     s = select(State)
     lol = session.query(State).filter(State.name.like(argv[4])).first()
-    flag = 0
-    for i in lol:
+    if lol:
         print(str(i.id))
-        flag = 1
-    if flag == 0:
+    else:
         print('Not found')
+    session.close()
