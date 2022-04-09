@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """
+ a script that adds the State object
+ “Louisiana” to the database hbtn_0e_6_usa
 """
 
 from model_state import Base, State
@@ -22,4 +24,3 @@ if __name__ == "__main__":
     result = session.query(State).filter(State.name.like('%Louisiana%'))
     for i in result:
         print(i.id)
-
