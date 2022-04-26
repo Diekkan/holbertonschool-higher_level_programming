@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-# Module with code that mangages error code
+""" Module with code that mangages error code"""
 import urllib.request
 import urllib.error
 import sys
 
 
 if __name__ == "__main__":
-    # displays body of response and manages error code
+    """displays body of response and manages error code"""
     url = sys.argv[1]
     req = urllib.request.Request(url)
     try:

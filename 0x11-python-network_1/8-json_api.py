@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-# Module that posts request of letter to specific website
+"""Module that posts request of letter to specific website"""
 import requests
 import sys
 
 
 if __name__ == "__main__":
-    # posts request of letter to specific website
+    """posts request of letter to specific website"""
     url = 'http://0.0.0.0:5000/search_user'
     try:
         q = {'q': sys.argv[1]}

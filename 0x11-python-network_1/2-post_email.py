@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-# Module with code that sends email POST request
+""" Module with code that sends email POST request"""
 import urllib.request
 import urllib.parse
 import sys
 
 
 if __name__ == "__main__":
-    # sends email POST request
+    """sends email POST request"""
     url = sys.argv[1]
     email = sys.argv[2]
     values = {'email': email}

@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-# uses Github credentials to display ID
+""" uses Github credentials to display ID"""
 import sys
 import requests
 
 
 if __name__ == "__main__":
-    # uses Github credentials to display ID
+    """uses Github credentials to display ID"""
     try:
         username = sys.argv[1]
         password = sys.argv[2]
